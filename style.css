@@ -1,93 +1,104 @@
-/* Reset */
+/* Reset default browser styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Base style */
+/* Base styles for all pages */
 body {
   font-family: 'Segoe UI', sans-serif;
-  color: #333;
-  min-height: 100vh;
+  color: #0d47a1; /* Dark blue text */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  min-height: 100vh;
 }
 
-/* Background images by page */
+/* Background images for each page */
+body.login {
+  background-image: url('https://images.unsplash.com/photo-1605902711622-cfb43c4437f1'); /* bank interior */
+}
+
 body.home {
-  background-image: url('https://images.unsplash.com/photo-1588776814546-ec7e6f034061');
-}
-
-body.about {
-  background-image: url('https://images.unsplash.com/photo-1556742400-b5e2e35267f2');
+  background-image: url('https://images.unsplash.com/photo-1588776814546-ec7e6f034061'); /* bank building */
 }
 
 body.services {
-  background-image: url('https://images.unsplash.com/photo-1588776814267-a263eff72f39');
+  background-image: url('https://images.unsplash.com/photo-1588776814267-a263eff72f39'); /* credit cards */
+}
+
+body.loans {
+  background-image: url('https://images.unsplash.com/photo-1588776814745-8b9da12ba94d'); /* coins in jar */
+}
+
+body.about {
+  background-image: url('https://images.unsplash.com/photo-1556742400-b5e2e35267f2'); /* office meeting */
 }
 
 body.contact {
-  background-image: url('https://images.unsplash.com/photo-1605902711622-cfb43c4437f1');
+  background-image: url('https://images.unsplash.com/photo-1556741533-f6acd647d2fb'); /* person using app */
 }
 
-body.blog {
-  background-image: url('https://images.unsplash.com/photo-1556741533-f6acd647d2fb');
+/* Header style */
+header {
+  background-color: rgba(21, 101, 192, 0.85); /* Blue with transparency */
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-body.gallery {
-  background-image: url('https://images.unsplash.com/photo-1588776814745-8b9da12ba94d');
-}
-
-/* Main content area */
+/* Main container for content */
 main {
   max-width: 1000px;
   margin: 40px auto;
   padding: 30px;
-  background-color: rgba(255, 255, 255, 0.94);
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.95); /* Soft white background */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Header */
-header {
-  background-color: rgba(0, 96, 100, 0.85);
-  color: white;
-  padding: 30px;
-  text-align: center;
-  font-size: 1.8rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-}
-
-/* Section */
+/* Section style */
 section {
-  background-color: rgba(224, 242, 241, 0.9);
+  background-color: rgba(227, 242, 253, 0.9); /* Light blue tint */
   padding: 25px;
   margin-top: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer */
+section h2 {
+  color: #1565c0;
+  margin-bottom: 10px;
+}
+
+/* Footer style */
 footer {
-  background-color: rgba(0, 77, 64, 0.9);
+  background-color: rgba(13, 71, 161, 0.9);
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 25px;
   margin-top: 40px;
-  border-top: 4px solid #004d40;
+  border-top: 4px solid #0d47a1;
 }
 
-/* Responsive */
+/* Responsive styles */
 @media (max-width: 768px) {
   header {
-    font-size: 1.4rem;
-    padding: 20px;
+    font-size: 1.5rem;
+    padding: 25px 15px;
   }
 
   main {
     margin: 20px;
+    padding: 20px;
+  }
+
+  section {
     padding: 20px;
   }
 }
