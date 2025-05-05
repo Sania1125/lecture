@@ -1,0 +1,159 @@
+/* -----------------------
+   Base Styling
+------------------------ */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+/* -----------------------
+   Page-specific Backgrounds
+------------------------ */
+body.home-page {
+  background-image: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1600&q=80');
+}
+
+body.services-page {
+  background-image: url('https://images.unsplash.com/photo-1567428485548-8b53e3b8f9b2?auto=format&fit=crop&w=1600&q=80');
+}
+
+body.loans-page {
+  background-image: url('https://images.unsplash.com/photo-1588776814546-2ba6aa0f1f99?auto=format&fit=crop&w=1600&q=80');
+}
+
+body.about-page {
+  background-image: url('https://images.unsplash.com/photo-1612831455543-7c6b5c7040ed?auto=format&fit=crop&w=1600&q=80');
+}
+
+body.contact-page {
+  background-image: url('https://images.unsplash.com/photo-1590650046871-bd6f4c8b6a5f?auto=format&fit=crop&w=1600&q=80');
+}
+
+body.auth-page {
+  background-image: url('https://images.unsplash.com/photo-1600267165696-f486d1f0576d?auto=format&fit=crop&w=1600&q=80');
+}
+
+/* -----------------------
+   Header & Navigation
+------------------------ */
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #ffcc00;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+/* -----------------------
+   Content Areas
+------------------------ */
+.page, .form, .accounts, .hero-box {
+  background: rgba(255, 255, 255, 0.92);
+  color: #222;
+  padding: 30px;
+  margin: 40px auto;
+  border-radius: 12px;
+  max-width: 750px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  text-align: left;
+}
+
+.hero-box {
+  text-align: center;
+}
+
+.hero-box h2 {
+  font-size: 2em;
+  color: #003366;
+}
+
+.hero-box p {
+  font-size: 1.2em;
+  color: #444;
+}
+
+/* -----------------------
+   Buttons & Inputs
+------------------------ */
+.cta-button,
+button {
+  background-color: #ff9800;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover,
+button:hover {
+  background-color: #e68900;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* -----------------------
+   Footer
+------------------------ */
+footer {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #ccc;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* -----------------------
+   Message Area
+------------------------ */
+#auth-message {
+  font-weight: bold;
+  margin-top: 15px;
+  color: #d32f2f;
+}
